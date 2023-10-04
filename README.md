@@ -201,7 +201,7 @@ head -n 12000 metadata_shuf.csv > metadata_train.csv
 tail -n 1100 metadata_shuf.csv > metadata_val.csv
 ```
 
-To train a new model, you need to define your own ```config.json``` to define model details, trainin configuration and more (check the examples). Then call the corressponding train script.
+To train a new model, you need to define your own ```config.json``` to define model details, training configuration and more (check the examples). Then call the corresponding train script.
 
 For instance, in order to train a tacotron or tacotron2 model on LJSpeech dataset, follow these steps.
 
@@ -227,7 +227,7 @@ For multi-GPU training, call ```distribute.py```. It runs any provided train scr
 CUDA_VISIBLE_DEVICES="0,1,4" python TTS/bin/distribute.py --script train_tacotron.py --config_path TTS/tts/configs/config.json
 ```
 
-Each run creates a new output folder accomodating used ```config.json```, model checkpoints and tensorboard logs.
+Each run creates a new output folder accommodating used ```config.json```, model checkpoints and Tensorboard logs.
 
 In case of any error or intercepted execution, if there is no checkpoint yet under the output folder, the whole folder is going to be removed.
 
@@ -240,7 +240,7 @@ This repository is governed by Mozilla's code of conduct and etiquette guideline
 2. Implement your changes.
 3. (if applicable) Add [Google Style](https://google.github.io/styleguide/pyguide.html#381-docstrings) docstrings.
 4. (if applicable) Implement a test case under ```tests``` folder.
-5. (Optional but Prefered) Run tests. 
+5. (Optional but Preferred) Run tests. 
 ```bash
 ./run_tests.sh
 ```
@@ -256,10 +256,10 @@ cardboardlinter --refspec master
 Feel free to ping us at any step you need help using our communication channels.
 
 ## Collaborative Experimentation Guide
-If you like to use TTS to try a new idea and like to share your experiments with the community, we urge you to use the following guideline for a better collaboration.
+If you would like to use TTS to try a new idea and like to share your experiments with the community, we urge you to use the following guideline for a better collaboration.
 (If you have an idea for better collaboration, let us know)
 - Create a new branch.
-- Open an issue pointing your branch.
+- Open an issue pointing to your branch.
 - Explain your idea and experiment.
 - Share your results regularly. (Tensorboard log files, audio results, visuals etc.)
 
